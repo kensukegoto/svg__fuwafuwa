@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    main {
+      width: 960px;
+      margin-right: auto;
+      margin-left: auto;
+    }
+    ul {
+      display: flex;
+      flex-wrap: wrap;
+      list-style: none;
+    }
+    .card {
+      padding: 10px;
+      width: calc(100% / 3 - 32px);
+      background-repeat: no-repeat;
+      background-size: auto 80%;
+      background-position: center;
+      border: 1px solid #ccc;
+      margin-bottom: 1em;
+    }
+    .card--circle {
+      background-image: url('./bg_circle.svg');
+    }
+    .card--blue {
+      background-image: url('./bg_blue.svg');
+    }
+    .card--yellow {
+      background-image: url('./bg_yellow.svg');
+    }
+    .card:nth-child(3n + 1) {
+      margin-right: 16px;
+    }
+    .card:nth-child(3n + 2) {
+      margin-right: 16px;
+    }
+    .card p {
+      margin-top: 1em;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <ul>
+      <li class="card card--circle">
+        <h2>いろはにほへと</h2>
+        <p>この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。</p>
+      </li>
+      <li class="card card--blue">
+        <h2>いろはにほへと</h2>
+        <p>この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。</p>
+      </li>
+      <li class="card card--yellow">
+        <h2>いろはにほへと</h2>
+        <p>この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。</p>
+      </li>
+      <li class="card card--circle">
+        <h2>いろはにほへと</h2>
+        <p>この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。</p>
+      </li>
+      <li class="card card--blue">
+        <h2>いろはにほへと</h2>
+        <p>この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。</p>
+      </li>
+      <li class="card card--yellow">
+        <h2>いろはにほへと</h2>
+        <p>この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。</p>
+      </li>
+    </ul>
+  </main>
+  <!-- <svg fill="#00266D" x="0px" y="0px" width="225px" height="225px">
+    <clipPath id="frame">
+      <path>
+        <animate dur="1s" repeatCount="indefinite" attributeName="d" attributeType="XML" values=" M148.145,9.644c0,0,67.558,14.52,68.826,85.875c5.361,17.995,5.048,44.192-12.947,73.24c-27.153,36.303-45.461,60.927-120.283,49.25 C44.91,206.33,9.555,170.965,4.185,126.138C5.766,75.629,23.439,49.11,41.122,36.163C61.958,21.957,78.372-3.303,148.145,9.644z; M148.145,9.644c0,0,63.855,3.356,65.826,81.875c0.471,18.771,3.77,53.917-14.273,82.935C172,219,158.563,221.686,83.741,210.008 C44.91,198.33,6.185,171.286,6.185,126.138C6.185,68,23.318,40.947,41,28C61.836,13.793,78.372-3.303,148.145,9.644z; M152.5,10c0,0,45.5,3.5,56,82.5c5.509,35.141,10.197,66-1,84.5c-25,35.5-40,56.5-128,32c-66-17.5-72.315-37-72.315-83.861 C7.185,107.951,0,43.5,41.5,26.5C66,15,83.5,0.5,152.5,10z; M148.145,14.644c0,0,64.467,7.837,66.438,86.356c0.471,18.771,3.55,40.683-14.884,69.454C175,209,163,213.012,83.741,210.008 c-43.003-1.63-79.557-46.722-79.557-91.87C4.185,57.333,20.318,41.947,38,29C61.91,12.698,75.297,1.127,148.145,14.644z; M148.145,9.644c0,0,67.558,14.52,68.826,85.875c5.361,17.995,5.048,44.192-12.947,73.24c-27.153,36.303-45.461,60.927-120.283,49.25 C44.91,206.33,9.555,170.965,4.185,126.138C5.766,75.629,23.439,49.11,41.122,36.163C61.958,21.957,78.372-3.303,148.145,9.644z">
+        </animate>
+      </path>
+    </clipPath>
+    <image clip-path="url(#frame)" height="100%" width="100%" xlink:href="./tam.jpg"/>
+  </svg> -->
+</body>
+</html>
